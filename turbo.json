@@ -1,0 +1,39 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "tasks": {
+    "clean": {
+      "cache": false,
+      "outputs": []
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "test": {
+      "dependsOn": ["^build", "^test"]
+    },
+    "e2etest:full": {
+      "dependsOn": ["^build"]
+    },
+    "e2etest:smoketest": {
+      "dependsOn": ["^build"]
+    },
+    "test:watch": {
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "changelog:update": {
+      "cache": false
+    },
+    "changelog:validate": {
+      "cache": false
+    }
+  }
+}
