@@ -7,13 +7,13 @@
     "MetaMask",
     "Ethereum"
   ],
-  "homepage": "https://github.com/metamask/delegator-toolkit/tree/main/packages/delegation-deployments#readme",
+  "homepage": "https://github.com/metamask/delegation-toolkit/tree/main/packages/delegation-deployments#readme",
   "bugs": {
-    "url": "https://github.com/metamask/delegator-toolkit/issues"
+    "url": "https://github.com/metamask/delegation-toolkit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/metamask/delegator-toolkit.git"
+    "url": "https://github.com/metamask/delegation-toolkit.git"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
